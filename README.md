@@ -33,3 +33,17 @@ When you are done downloading all the dependencies and project files the only re
 ```js
 angular.module('myModule', ['datatable']);
 ```
+
+##Directive configuration attributes
+
+* name : Unique name used to distinguish between multiple tables in the same application
+* title : An optional title that is rendered above the table inside heading element
+* container-classes : Container element classes. Container element contains every other element created by angular-datatable
+* heading-classes : Heading element classes. Heading element contains the title
+* body-classes: Classes for the element that contains the actual table and an optional search box. Do not confuse with html body.
+* table-height: The height of the table in pixels
+* scroll-for-more: If true events are generated when table scrolling reaches the top or the bottom. Such events can be used to load more data. 
+* scroll-for-more-distance: The distance in pixels from top or bottom when the corresponding events are generated.
+* show-search: If true a search box is rendered above the table
+
+See demo/index.html for an example of directive config attributes
