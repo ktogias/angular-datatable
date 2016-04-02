@@ -1,0 +1,23 @@
+<div class="datatable-container {{containerClasses}}" tabindex="0" ng-keydown="onKeyDown($event)">
+    <div class="datatabe-header {{headingClasses}}">{{title}}</div>
+    <div class="datatable-body {{bodyClasses}}" ng-hide="!showSearch">
+        <input type="text" ng-model="search" ng-model-options="{debounce: 500}" class="search-query" id="customers_search"
+       placeholder="Search">
+    </div>
+    <div class="datatable-table-container" ng-if="data">
+        <table class="table datatable-table selectable-rows sticky-header {{tableClasses}}" id="{{tableId}}">
+            <thead>
+                <tr>
+                    <th ng-repeat="field in fields">
+                        {{field.title}}<b class="caret"></b>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="selectable" ng-repeat="item in data" ng-click="onClick($index)" ng-class="{'selected':focusIndex === $index}" data-id="{{item[idfield]}}">
+                    <td ng-repeat="field in fields">{{item[field.field]}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
