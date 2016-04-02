@@ -1,6 +1,10 @@
 # angular-datatable
 An AngularJS module for creating dynamic bootstrap tables
 
+## Demo
+
+[Try it on Plunker] (http://plnkr.co/edit/CpPD56z1BIguJ7eSBfb3?p=preview)
+
 ## Installation
 
 Installation is easy as angular-datatable has minimal dependencies - only the AngularJS (https://angularjs.org), Twitter Bootstrap's CSS (http://getbootstrap.com/css) and FixedHeaderTable jquery plugin (http://www.fixedheadertable.com) are required.
