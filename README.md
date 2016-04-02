@@ -18,7 +18,9 @@ angular-datatable has been tested with FixedHeaderTable 1.3
 After downloading dependencies (or better yet, referencing them from your favorite CDN) you need to download build version of this project. All the files and their purposes are described here:
 * datatable.js : The angular module javascript code
 * datatable.phtml : The angular template code
-* demo.js : An angular demo application module that uses angular-datatable
+* datatable.css : angular-table css
+* demo/demo.js : An angular demo application module that uses angular-datatable
+* demo/index.html : The index html file for the demo application
 
 ## Adding dependency to your project
 
