@@ -95,3 +95,15 @@ angular-datatable provides datatableService angular service that provides the fo
     {status: boolean, where: 'top'||'bottom'}
     ```
 * scrollTop(name) : Scrolls the table at top
+
+##Events
+
+* datatable/ready : Datatable is fully rendered
+* datatable/reloadData : Data has been set
+* datatable/setSort : Sort has been set
+* datatable/updateSelected : Selected item has been set
+* datatable/setSearch : Search string has been set
+* datatable/waitForData : waitingForData objeject has been set
+* datatable/scrollTop : Scroll table to top
+* datatable/scrollReachedTop : Table scroll has reached the top
+* datatable/scrollReachedBottom : Table scroll has reached the bottom
