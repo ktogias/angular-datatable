@@ -152,7 +152,8 @@ angular.module('datatableDemo', ['datatable'])
                     params.sort = angular.copy(newSort);
                     datatableService.setData(datatableName, data.sort(sortFunction).slice(0,5), $scope, params.datatable);
                     datatableService.scrollTop(datatableName);
-                    datatableService.setSearch('');
+                    datatableService.setSearch(datatableName, '');
+                    datatableService.setSelected(datatableName, null, null, $scope);
                     loadaedMoreData = false;
                 }
             }
@@ -177,6 +178,7 @@ angular.module('datatableDemo', ['datatable'])
             if (name === datatableName){
                 datatableService.setData(datatableName, filterFilter(data, datatableService.getSearch(datatableName)).sort(sortFunction).slice(0,5), $scope, params.datatable);
                 datatableService.scrollTop(datatableName);
+                datatableService.setSelected(datatableName, null, null, $scope);
                 loadaedMoreData = false;
             }
         })
