@@ -53,13 +53,13 @@ See demo/index.html for an example of directive config attributes
 angular-datatable provides datatableService angular service that provides the following methods:
 * setFields(name, someFields) : Sets the fields array. name is the unique name of this datatable. 
     The someFields is an array of objects of the form 
-    ```js    
+    ```    
     {title: string, field: string, sortable: boolean}
     ```
 * getFields(name) : Returns the fields array. name is the unique name of this datatable. 
 * setData(name, someData, $scope, params) : Set the data array. 
     The data array is an array of objects of the type 
-    ```js    
+    ```    
     {field1name: data, field2name: data, ...}
     ```
     $scope is used for broadcasting a datatable/reloadData event after setting the data
@@ -67,7 +67,7 @@ angular-datatable provides datatableService angular service that provides the fo
 * getData(name) : Returns the data array
 * setSort(name, someSort, $scope) : Sets the sorting of the table.
     someSort object is of the form
-    ```js    
+    ```    
     {index: number, field: a field object(see setFields), order: 'asc'||'desc'}
     ```
     A datatable/setSort event is broadcasted to $scope if provided.
@@ -80,7 +80,7 @@ angular-datatable provides datatableService angular service that provides the fo
     $scope: A datatable/updateSelected event will be broadcasted on this scope
     options: This object will be passed with the datatable/updateSelected
 * getSelected(name) : Returns the selected data item as an object of the following form
-    ```js    
+    ```    
     {index: number, id: mixed, dataItem: the data item object }
     ```
 * setDatatableScope(name, scope): Set the datatable scope. This is the datatable module scope used for emiting events.
@@ -91,7 +91,7 @@ angular-datatable provides datatableService angular service that provides the fo
     Used to stop repeating datatable/scrollReachedTop and datatable/scrollReachedBottom events while waiting for data from an asynchronous call.
     where is 'top' or 'bottom'.
 * getWaitForData(name) : Returns an object of the form:
-    ```js    
+    ```    
     {status: boolean, where: 'top'||'bottom'}
     ```
 * scrollTop(name) : Scrolls the table at top
