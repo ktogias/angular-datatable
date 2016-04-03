@@ -181,6 +181,14 @@ angular.module('datatableDemo', ['datatable'])
             }
         })
     );
+    
+    watchers.push(
+        $scope.$on('datatable/updateSelected', function(event, name, options){
+            if (name === datatableName){
+                $scope.selected = datatableService.getSelected(datatableName);
+            }
+        })
+    );
 
     watchers.push(
         $scope.$on('$destroy', function(){
