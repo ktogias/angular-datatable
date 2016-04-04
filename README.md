@@ -4,6 +4,7 @@ An AngularJS module for creating dynamic bootstrap tables
 ## Features
 * Sortable
 * Searchable
+* Select row by click/tap or cursor keys
 * Dynamically load more/less data (paging) while scrolling
 * Sticky header row can remain visible on top while scriolling data
 * Angular service methods and events for using with your own Angular module 
