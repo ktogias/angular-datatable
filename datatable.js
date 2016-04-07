@@ -287,12 +287,9 @@ angular.module('datatable', [])
             };
             
             watchers.push(
-                scope.onClick = function(index){
-                    if (scope.focusIndex !== index){ 
-                        scope.focusIndex = index;
-                    } else {
-                        scope.focusIndex = null;
-                    }
+                scope.onClick = function(item){
+                    var index = scope.data.indexOf(item);
+                    scope.focusIndex = (scope.focusIndex !== index) ? index : null;
                     scope.setSelected(); 
                 }
             );
