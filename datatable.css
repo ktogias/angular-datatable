@@ -8,27 +8,37 @@ http://www.opensource.org/licenses/mit-license.php
 */
 
 table tr.selectable:focus, table tr.selectable.focus, table tr.selectable:hover {
-  background-color: #f1f1f1; }
+  background-color: #f1f1f1;
+}
+
 table tr.selectable.selected {
-  background-color: #aab7d1; }
+  background-color: #aab7d1;
+}
 
 .caret.flipped {
   border-bottom: 4px dashed;
   border-bottom: 4px solid;
-  border-top: 0; }
+  border-top: 0;
+}
 
 th .caret {
   visibility: hidden;
   position: absolute;
-  bottom: 17px; }
+  bottom: 17px;
+}
 
 .fht-thead .sortable.sorted .caret {
-  visibility: visible; }
+  visibility: visible;
+}
+
 .fht-thead .sortable.sorted.sorted-asc .caret {
   border-top: 4px dashed;
   border-top: 4px solid;
-  border-bottom: 0; }
+  border-bottom: 0;
+}
+
 .fht-thead .sortable.sorted.sorted-desc .caret {
   border-bottom: 4px dashed;
   border-bottom: 4px solid;
-  border-top: 0; }
+  border-top: 0;
+}

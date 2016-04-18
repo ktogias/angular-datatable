@@ -14,7 +14,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="selectable" ng-repeat="item in data" ng-click="onClick($index)" ng-class="{'selected':focusIndex === $index}" data-id="{{item[idfield]}}">
+                <tr class="selectable" ng-repeat="item in data" ng-click="onClick(item)" ng-class="{'selected':focusIndex === $index}" data-id="{{item[idfield]}}">
                     <td ng-repeat="field in fields">{{item[field.field]}}</td>
                 </tr>
             </tbody>

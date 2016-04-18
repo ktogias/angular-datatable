@@ -8,37 +8,40 @@ Licensed under MIT
 http://www.opensource.org/licenses/mit-license.php
 -->
 <html>
-    <head>
-        <title>Angular Datatable Demo</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link href="https://cdn.rawgit.com/markmalek/Fixed-Header-Table/master/css/defaultTheme.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="../datatable.css" rel="stylesheet" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-        <script type="text/javascript" src="https://cdn.rawgit.com/markmalek/Fixed-Header-Table/master/jquery.fixedheadertable.min.js"></script>
-        <script type="text/javascript" src="../datatable.js"></script>
-        <script type="text/javascript" src="demo.js"></script>
-    </head>[
-    <body ng-app="datatableDemo">
-        <div class="container">
-            <div class="main" ng-controller="datatableDemoController">
-                <datatable name="customerstable" 
-                            title="Customers" 
-                            container-classes="panel panel-default" 
-                            heading-classes="panel-heading" 
-                            body-classes="panel-body"
-                            table-height="200"
-                            scroll-for-more="true"
-                            scroll-for-more-distance="0"
-                            show-search="true"
-                            >
-                 </datatable>
-                <div>
-                    Selected customer: {{selected}} 
-                </div>
-            </div>
-        </div>
-    </body>
+<head>
+  <title>Angular Datatable Demo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="https://cdn.rawgit.com/markmalek/Fixed-Header-Table/master/css/defaultTheme.css" media="screen"
+        rel="stylesheet" type="text/css">
+  <link href="../datatable.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="datatableDemo">
+<div class="container">
+  <div class="main" ng-controller="datatableDemoController">
+    <datatable name="customerstable"
+               title="Customers"
+               container-classes="panel panel-default"
+               heading-classes="panel-heading"
+               body-classes="panel-body"
+               table-height="200"
+               scroll-for-more="true"
+               scroll-for-more-distance="0"
+               show-search="true"
+    >
+    </datatable>
+    <div>
+      Selected customer: {{selected}}
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.rawgit.com/markmalek/Fixed-Header-Table/master/jquery.fixedheadertable.min.js"></script>
+<script type="text/javascript" src="../datatable.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+</body>
 </html>
